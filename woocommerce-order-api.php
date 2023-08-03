@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Woocommerce Order Api
-Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+Plugin URI: https://github.com/edgarberlinck/woocommerce-order-api.git
 Description: A brief description of the Plugin.
 Version: 1.0
 Author: Edgar Muniz Berlinck
