@@ -6,6 +6,6 @@
 		));
 	});
 
-	function handle_get_orders() {
+	function handle_get_orders($request) {
 
 	}
