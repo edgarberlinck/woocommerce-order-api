@@ -12,7 +12,7 @@
 		$token = $request->get_header('token');
 
 		if (!isset($token) || $token != $options["token"])
-			return array("status" => 403, "message" => "you shall not pass!");
+			return array("status" => 403, "message" => "Your access token is invalid or not present.");
 
 		$args = array(
 			'status' => array('wc-processing', 'wc-pending'),
