@@ -5,7 +5,6 @@ Plugin Name: Woocommerce Order Api
 Plugin URI: https://github.com/edgarberlinck/woocommerce-order-api.git
 Description: A brief description of the Plugin.
 Version: 1.0
-Requires at least: 7.0.0
 Requires PHP: 7.4.30
 Author: Edgar Muniz Berlinck
 Author URI: https://beacons.ai/edgarberlinck
@@ -20,6 +19,8 @@ if (
 ) {
 	exit;
 }
+
+// TODO: Check for wallet plugin
 
 if (!defined('WOOCOMMERCE_ORDER_API_PATH')) {
 	define('WOOCOMMERCE_ORDER_API_PATH', plugin_dir_path(__FILE__));
@@ -46,6 +47,7 @@ class Woocommerce_Order_Api_Install {
 	}
 
 	public function include() {
+		require_once WOOCOMMERCE_ORDER_API_PATH . 'functions.php';
 		require_once WOOCOMMERCE_ORDER_API_PATH . 'includes/wcoapi.php';
 	}
 
