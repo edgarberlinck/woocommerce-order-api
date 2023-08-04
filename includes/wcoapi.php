@@ -7,7 +7,7 @@
 //    "wc-refunded": "Reembolsada",
 //    "wc-failed": "Falhada",
 //    "wc-checkout-draft": "Draft"
-	function handle_get_orders($request) {
+	function handle_get_orders($request): array {
 		$options = get_option('wcoapi_data') ? get_option('wcoapi_data') : get_default_data();
 		$token = $request->get_header('token');
 
@@ -17,7 +17,13 @@
 		$args = array(
 			'status' => array('wc-processing', 'wc-pending'),
 		);
-		return wc_get_orders( $args );
+
+		$orders = [];
+		foreach (wc_get_orders( $args ) as $order_data) {
+			$orders[] = $order_data->get_data();
+		}
+
+		return $orders;
 	}
 
 
