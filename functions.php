@@ -1,7 +1,6 @@
 <?php
 
-function GUID()
-{
+function GUID(): string {
 	if (function_exists('com_create_guid') === true)
 	{
 		return trim(com_create_guid(), '{}');
@@ -11,8 +10,6 @@ function GUID()
 }
 
 function get_default_data() {
-
 	return array("token" => GUID());
-
 }
 

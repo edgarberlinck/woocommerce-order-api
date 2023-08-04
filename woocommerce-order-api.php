@@ -20,8 +20,6 @@ if (
 	exit;
 }
 
-// TODO: Check for wallet plugin
-
 if (!defined('WOOCOMMERCE_ORDER_API_PATH')) {
 	define('WOOCOMMERCE_ORDER_API_PATH', plugin_dir_path(__FILE__));
 }
@@ -58,7 +56,7 @@ class Woocommerce_Order_Api_Install {
 	}
 
 	function add_settings_tab($tabs) {
-		$tabs['wcoapi'] = esc_html('WC Order API', 'woocommerce-order-api');
+		$tabs['wcoapi'] = esc_html('Order API', 'woocommerce-order-api');
 		return $tabs;
 	}
 
