@@ -4,7 +4,7 @@
 Plugin Name: Woocommerce Order Api
 Plugin URI: https://github.com/edgarberlinck/woocommerce-order-api.git
 Description: This plugins creates an end-point to easily integrate 3rd party systems with your Woocommerce without access the WP database. This plugin retrieves all orders that are pending or precessing.
-Version: 1.1.0
+Version: 1.1.1
 Requires PHP: 7.4.30
 Author: Edgar Muniz Berlinck
 Author URI: https://beacons.ai/edgarberlinck
