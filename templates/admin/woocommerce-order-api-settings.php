@@ -15,7 +15,7 @@
             <input
                style="flex-grow: 1; padding: .7rem;"
                name="wcoapi_data[token]" value="<?php echo $options['token'] ?>" />
-            <small>Chave de acesso a API, pode ser qualquer valor mas recomenda-se utilizar um <a target="_blank" href="https://guidgenerator.com/online-guid-generator.aspx">GUI generator</a></small>
+            <small>Chave de acesso a API, pode ser qualquer valor mas recomenda-se utilizar um <a target="_blank" href="https://guidgenerator.com/online-guid-generator.aspx">GUID generator</a></small>
         </div>
 
     </div>
