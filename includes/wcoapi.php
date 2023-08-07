@@ -20,7 +20,12 @@
 
 		$orders = [];
 		foreach (wc_get_orders( $args ) as $order_data) {
-			$orders[] = $order_data->get_data();
+			$data = array(
+				"order" => $order_data->get_data(),
+				"items" => $order_data->get_items(),
+			);
+
+			$orders[] = $data;
 		}
 
 		return $orders;
